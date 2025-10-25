@@ -1,7 +1,8 @@
 from .schemas import Student
 
 students_db = [
-    Student(id=1, name="Renato Hioji Okamoto Odake", email="renato@example.com")
+    Student(id=1, name="Renato Hioji Okamoto Odake", 
+            email="renato@example.com")
 ]
 
 
