@@ -27,7 +27,10 @@ def test_get_student_by_id_not_found():
 def test_create_student_success():
     response = client.post(
         "/students",
-        json={"name": "Leticia Sayuri Okamoto Imasato", "email": "lesyimasato@fatec.sp.gov.br"},
+        json={
+            "name": "Leticia Sayuri Okamoto Imasato",
+            "email": "lesyimasato@fatec.sp.gov.br",
+        },
     )
     assert response.status_code == 201
     data = response.json()

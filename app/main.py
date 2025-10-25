@@ -4,6 +4,7 @@ from .schemas import Student, StudentCreate
 
 app = FastAPI(title="Student API")
 
+
 @app.get("/students", response_model=list[Student])
 def list_students():
     return get_all_students()
